@@ -1,41 +1,44 @@
+// ques: Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+//Question : https://leetcode.com/problems/rotate-array
 var rotate = function(nums, k) {
-    /*k = k%nums.length;
-    if(k===0){
-        return
-    }
-    let temp=[];
-    let temp2 = []
-    for(let i=0;i<nums.length-k;i++){
-        temp[i] = nums[i];
-    }
-    for(let i=nums.length-k, j=0; i<nums.length;i++){
-        temp2[j++] = nums[i];
-    }
+    k=k%nums.length;
+    //## javascript way but time limit exceeds in leetcode.
+    // for(let i=0;i<k;i++){
+    //     let element = nums.pop();
+    //     nums.unshift(element);
+    // }
+
+    // ## second way better approach
     
-    for( let i=0;i<k;i++){
-        nums[i] = temp2[i]
+    /*let secondPartArray=[]
+    for(let i=nums.length-k, j=0; i<nums.length; i++){
+        secondPartArray[j++]= nums[i];
     }
-    for( let i=k,j=0;i<nums.length;i++){
-        nums[i] = temp[j++]
+    let firstPartArray = []
+    for(let i=0; i<nums.length-k;i++){
+       firstPartArray[i] = nums[i] 
+    }
+
+    for(let i=0;i<secondPartArray.length;i++){
+        nums[i] = secondPartArray[i];
+    }
+    for(let i=0; i<firstPartArray.length;i++){
+        nums[i+k] = firstPartArray[i];
     }*/
 
-    // ## Other way Optiomal solution
-    k = k%nums.length;
-    reverseArray(nums, 0, nums.length-k);
-    reverseArray(nums, nums.length-k, nums.length);
-    reverseArray(nums, 0, nums.length);
-    console.log(nums);
+    reverseArray(nums, 0, nums.length-k-1);
+    reverseArray(nums, nums.length-k, nums.length-1);
+    reverseArray(nums, 0, nums.length-1);
     
 };
 
-function reverseArray(inputArray, startIndex, endIndex){
+function reverseArray(array, startIndex, endIndex){
     let temp;
-    for(let i=startIndex, j=endIndex-1; i<=j;i++, j--){
-        temp = inputArray[i];
-        inputArray[i] = inputArray[j];
-        inputArray[j] = temp;
+    for(let i=startIndex, j=endIndex; i<j; i++, j--){
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 }
 
-//Question : https://leetcode.com/problems/rotate-array
-// https://www.youtube.com/watch?v=wvcQg43_V8U
+// reference: https://www.youtube.com/watch?v=wvcQg43_V8U
