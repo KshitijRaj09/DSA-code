@@ -11,8 +11,8 @@ var isIsomorphic = function(s, t) {
         if(hashTable1[s[i]] !== hashTable2[t[i]]){
             return false;
         }
-        hashTable1[s[i]] = i+1;
-        hashTable2[t[i]] = i+1;
+        hashTable1[s[i]] = i;
+        hashTable2[t[i]] = i;
     }
     return true;
 };
