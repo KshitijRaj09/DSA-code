@@ -18,5 +18,5 @@ Data structure code
 ```
 1. Count frequency using hash map
 2. Boyer-Moore's Algo :  While traversal, if same element is found, increase counter, if you get different element decrease counter. If counter becomes zero, pick the element for comparison.
-ref : https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/
 ```
+> ref : [Boyer-moore-algorithm](https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/)
