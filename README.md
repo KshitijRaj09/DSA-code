@@ -7,3 +7,6 @@ Data structure code
 
 ### [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/description/?envType=study-plan-v2&envId=top-interview-150)
 ```Use hashmap to store element as key and indexes as value then check if differnece from current value is as per condition.```
+
+### [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/)
+```Every item in next row is the sum of previous array. In previous array, push 0 at the end of array and append 0 at the beginning.```
