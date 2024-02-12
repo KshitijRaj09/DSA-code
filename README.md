@@ -13,3 +13,9 @@ Data structure code
 
 ### [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
 ```Create a hashMap for storing the freqeuncies of elements in first array, then iterate 2nd array , reduce frequencies of element found in 2nd and push the element into result array.```
+
+### [169. Majority Element](https://leetcode.com/problems/majority-element/description/?envType=daily-question&envId=2024-02-12)
+```
+1. Count frequency using hash map
+2. Boyer-Moore's Algo :  While traversal, if same lement is found, increase counter, if you get different element decrease counter. If counter becomes zero, pick the element for comparison.
+```
