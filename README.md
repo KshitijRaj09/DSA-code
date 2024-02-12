@@ -12,4 +12,4 @@ Data structure code
 ```Every item in next row is the sum of previous array. In previous array, push 0 at the end of array and append 0 at the beginning.```
 
 ### [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/)
-```Create a hashMap for storing the freqeuncies of elements in first array, then iterate 2nd array and compare frequencies for result.```
+```Create a hashMap for storing the freqeuncies of elements in first array, then iterate 2nd array , reduce frequencies of element found in 2nd and push the element into result array.```
