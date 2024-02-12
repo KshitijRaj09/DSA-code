@@ -17,5 +17,6 @@ Data structure code
 ### [169. Majority Element](https://leetcode.com/problems/majority-element/description/?envType=daily-question&envId=2024-02-12)
 ```
 1. Count frequency using hash map
-2. Boyer-Moore's Algo :  While traversal, if same lement is found, increase counter, if you get different element decrease counter. If counter becomes zero, pick the element for comparison.
+2. Boyer-Moore's Algo :  While traversal, if same element is found, increase counter, if you get different element decrease counter. If counter becomes zero, pick the element for comparison.
+ref : https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/
 ```
