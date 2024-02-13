@@ -3,7 +3,6 @@
 
 var majorityElement = function(nums) {
     let count=0;
-    let element=nums[0];
     for(let i in nums)
         {
             if(count===0)
