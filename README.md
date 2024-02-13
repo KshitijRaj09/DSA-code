@@ -20,3 +20,6 @@ Data structure code
 2. Boyer-Moore's Algo :  While traversal, if same element is found, increase counter, if you get different element decrease counter. If counter becomes zero, pick the element for comparison.
 ```
 > ref : [Boyer-moore-algorithm](https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/)
+
+### [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
+```Take a pointer 'ZeroCount' for zero elements, iternate the array if found a non zero element then swap the non-zero element with zero element and increment 'zeroCount' pointer```
