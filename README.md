@@ -23,3 +23,15 @@ Data structure code
 
 ### [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) || [Source code](move_non_zeroes_left.js)
 ```Take a pointer 'ZeroCount' for zero elements, iternate the array if found a non zero element then swap the non-zero element with zero element and increment 'zeroCount' pointer```
+
+### [136. Single Number](https://leetcode.com/problems/single-number/description/) || [Source code](single_number.js)
+```
+1. Best-approach => Iterate the array -> XOR the elements of the array starting with zero.
+2. use hashMap to store the frequencies.
+```
+
+### [66. Plus One](https://leetcode.com/problems/plus-one/description/) || [Source code](plus_one.js)
+```Join the elements of array to form a number, add one after using BigInt(), convert the number to string and split it.```
+
+### [2108. Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/) || [Source code](first_palindromic_string_array.js)
+```Iterate through the array return if word is a palindrome, you can use two pointer approach for checking the palindrome.```
