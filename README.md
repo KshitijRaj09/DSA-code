@@ -21,5 +21,5 @@ Data structure code
 ```
 > ref : [Boyer-moore-algorithm](https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm/)
 
-### [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)
+### [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) || [Source code](move_non_zeroes_left.js)
 ```Take a pointer 'ZeroCount' for zero elements, iternate the array if found a non zero element then swap the non-zero element with zero element and increment 'zeroCount' pointer```
