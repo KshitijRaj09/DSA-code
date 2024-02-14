@@ -42,3 +42,6 @@ Data structure code
 
 ###  [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/) || [Source code](convert_sorted_array_to_bst.js)
 ``` Return type expected is TreeNode(already defined in the question). Use the logic of binary search, find mid of each set and store it in value, left side is start till mid-1 and right side is mid+1 till end```
+
+### [268. Missing Number](https://leetcode.com/problems/missing-number/description/) || [Source code](missing_number.js)
+``` Find total using (n(n+1))/2 - mathematical formula for finding sum of n natural numbers. Next, find total of all elements in given array. Subtracting numsTotal from Total gives the answer. ```
