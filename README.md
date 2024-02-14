@@ -35,3 +35,6 @@ Data structure code
 
 ### [2108. Find First Palindromic String in the Array](https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/) || [Source code](first_palindromic_string_array.js)
 ```Iterate through the array return if word is a palindrome, you can use two pointer approach for checking the palindrome.```
+
+### [2149. Rearrange Array Elements by Sign](https://leetcode.com/problems/rearrange-array-elements-by-sign/description) || [Source code](remove_duplicate_sortedArray_2.js)
+```Take three pointer and new output Array, 1st to store positive number at even places, 2nd to store negative number at odd places, 3rd to iterate the array.```
