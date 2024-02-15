@@ -46,5 +46,5 @@ Data structure code
 ### [268. Missing Number](https://leetcode.com/problems/missing-number/description/) || [Source code](missing_number.js)
 ``` Find total using (n(n+1))/2 - mathematical formula for finding sum of n natural numbers. Next, find total of all elements in given array. Subtracting numsTotal from Total gives the answer.```
 
-### [2971. Find Polygon With the Largest Perimeter](https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/description/)
+### [2971. Find Polygon With the Largest Perimeter](https://leetcode.com/problems/find-polygon-with-the-largest-perimeter/description/) || [Source code](find_polygon_with_largest_perimeter.js)
 ```Sort the array in descending order, find the sum of all items in array. Then iterate the array from largest to smallest, compare if the largest side > sum of remaining items, if yes then return the sum, otherwise check for next largest side with remaining sum.```
