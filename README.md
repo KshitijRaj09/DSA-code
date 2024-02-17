@@ -56,3 +56,25 @@ Data structure code
 3. Swap the previously swapped values to initiate backtracking. So, that, values will be reset to default for other.
 4. Inside Base condition `leftIndex===inputArray.length-1` and push the copy of `inputArray` in `resultArray`
 ```
+
+#### [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) || [Source Code](container_with_most_water.js)
+```
+1. Max area will be given by maximising width and height. Height would be the minimum value between the pole heights.
+2. Start with two pointers, i points to left edge and j points to right edge of the height array. Calculate max area at each combination, after that see which pole has less height, move pointer at less height towards the mid of the array. Terminate this check, when i>j means left pointer exceeds right pointer means the area could no longer be formed.
+```
+
+#### [1481. Least Number of Unique Integers after K Removals](https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/description/) || [Source Code](least_number_of_unique_integers_after_k_removals.js)
+```
+Crux : Remove elements with lowest frequency
+1. Create frequency hashmap by iterating over array, number is the key and frequency is stored in values
+2. Sort by values in ascending order i.e. number with least frequency should be at the top
+3. Now, keep on decreasing the values until k becomes zero
+```
+
+#### [1642. Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/description/) || [Source_Code](farthest_building_you_can_reach.js)
+```
+Crux : Use priority queue otherwise you will get Time Limit Exceeded error
+1. For building of low height simply jump, for higher heights use bricks.
+2. When bricks get exhausted, pull bricks from the jump where max bricks were used and replace it with ladder
+3. Continue until ladder becomes zero too.
+```
