@@ -78,3 +78,29 @@ Crux : Use priority queue otherwise you will get Time Limit Exceeded error
 2. When bricks get exhausted, pull bricks from the jump where max bricks were used and replace it with ladder
 3. Continue until ladder becomes zero too.
 ```
+
+#### [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) || [Source code](longest_consective_subSequence.js)
+```
+1. Delete the duplicate values, sort the array then, check if nums[i+1]-nums[i]===1, then update the consecutive Count and check `longestConsective = Math.max(longestConsective, consective).`
+2. Insert the array value in `Set` data structure then iterate over set values, check values should if first in the sequence then only check is set contains consecutive values and update the consecutive values, longestConsecutive value.
+```
+
+#### [2402. Meeting Rooms III](https://leetcode.com/problems/meeting-rooms-iii/description/) || [Source code](meeting_rooms.js)
+```
+1. Sort meetings with startTime.
+2. Take 2 arrays of size 'meeting_rooms' one to store meeting endtime, other to store count of meetings per room.
+Check the minimum endtime for allocating the next meeitng. If two rooms has same endTime, then take room of minimum index.
+3. For calculating meetingEndTime =>
+   I If (prevEndTime > currentMeetingstartTime), 
+      then (MeetingEndtime - currentMeetingStartTime) + currentMeetingEndTime;
+   II. else, meetingEndTime = currentMeetingEndTime
+   III. Also, update the count of meetings per room.
+
+4. Other approach using priority heap (need to figure out).
+```
+
+#### [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) || [Source code](longest_increasing_subsequence.js)
+```Write approach here...```
+
+#### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) || [Source code](maximum_subarray.js)
+```Write approach here....```
