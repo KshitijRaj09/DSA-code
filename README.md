@@ -125,3 +125,9 @@ Iterator over the array, take two variables one to store `currentSubrraySum`, ot
    II. reverseArray(nums, nums.length-k, nums.length-1); // Reverse k index to last
    III.reverseArray(nums, 0, nums.length-1); // Reverse the entire array
 ```
+
+#### [231. Power of Two](https://leetcode.com/problems/power-of-two/description/) || [Source code](power_of_two.js)
+``` We need to check whether given input is power of two or not. 
+    Math.log2(input) gives whole number for elements which are power of 2
+    result%1 gives 0 for whole number
+```
