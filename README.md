@@ -1,5 +1,6 @@
 # DSA-code
-Data structure code
+## Data structure code written in javascript. 
+
 #### [20. Valid Parenthesis](https://leetcode.com/problems/valid-parentheses/description/?envType=study-plan-v2&envId=top-interview-150) || [Source code](valid_parenthesis.js)
 ```Iternate the array and store the reversed parenthesis in outputarray, once we get reversed parenthesis, pop the last and match, if not equal then break and return false.```
 
@@ -103,4 +104,18 @@ Check the minimum endtime for allocating the next meeitng. If two rooms has same
 ```Write approach here...```
 
 #### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) || [Source code](maximum_subarray.js)
-```Write approach here....```
+```
+Iterator over the array, take two variables one to store `currentSubrraySum`, other to store `maxSum`. Check if in any point ``currentSubrraySum > max`, then update maxSum.
+   - sumSubArray = Math.max(sumSubArray + nums[i], nums[i]);
+   - maxSum = Math.max(sumSubArray, maxSum);
+```
+
+#### [189. Rotate Array](https://leetcode.com/problems/rotate-array/description/) || [Source code](rotate_array_right_k_times.js)
+```
+1. Use loop, pop the element from right(last) and use built in `unshift` to push the element on start of the array.
+2. Reverse the array from start till k index, then reverse k index to last, at last reverse the entire array to get the correct output.
+   - Create a reverse method, pass below arguments
+   I.  reverseArray(nums, 0, nums.length-1-k); // Reverse the array from start till k index
+   II. reverseArray(nums, nums.length-k, nums.length-1); // Reverse k index to last
+   III.reverseArray(nums, 0, nums.length-1); // Reverse the entire array
+```
