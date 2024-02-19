@@ -101,7 +101,13 @@ Check the minimum endtime for allocating the next meeitng. If two rooms has same
 ```
 
 #### [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) || [Source code](longest_increasing_subsequence.js)
-```Write approach here...```
+``` Subsequence - elements from the source array maintaining the same order, it could be contiguous or non-contiguous
+   - Approach - We initialize an array with 1, having same length as input array. This implies that every number will have atleast one increasing subsequence that is itself.
+   - In first loop, We traverse towards the beiginning of the array from the end.
+   - In it's nexted second loop we traverse from i+1 till the end, checking if the num[i] < num[j], then the lis of that ith index will be the maximum of either lis[i] or lis[j+1]
+   - So, at the end of the loop we have lisMemo of all elements at the index, we find it's max value ans return
+
+```
 
 #### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) || [Source code](maximum_subarray.js)
 ```
