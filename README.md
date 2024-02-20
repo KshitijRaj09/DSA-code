@@ -131,3 +131,9 @@ Iterator over the array, take two variables one to store `currentSubrraySum`, ot
 We need to check whether given input is power of two or not.
 Math.log2(input) gives whole number for elements which are power of 2, result%1 gives 0 for whole number
 ```
+
+#### [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) || [Source code](sort_colors.js)
+```Write Approch here.... ```
+
+#### [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) || [Source code](sprial_matrix.js)
+```Write approach here... ```
