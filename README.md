@@ -137,3 +137,6 @@ Math.log2(input) gives whole number for elements which are power of 2, result%1 
 
 #### [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) || [Source code](sprial_matrix.js)
 ```Write approach here... ```
+
+#### [48. Rotate Image](https://leetcode.com/problems/rotate-image/description/) || [Source code](rotate_matrix_90degree.js)
+```Write approach here...```
