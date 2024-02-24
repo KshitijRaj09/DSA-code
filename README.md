@@ -133,13 +133,28 @@ Math.log2(input) gives whole number for elements which are power of 2, result%1 
 ```
 
 #### [75. Sort Colors](https://leetcode.com/problems/sort-colors/description/) || [Source code](sort_colors.js)
-```Write Approch here.... ```
+```
+Method 1 : Count all the 3 numbers in the first iteration, in the next iteration, based on count, push the values
+Mathod 2 : Two pointer approach
+zeroPointer is at 0th index, twoPointer is at last index.
+iterate from 0 till the twoPointer, if the element is zero , then swap the element and element at zero pointer and increase i
+ if the element is two, then swap the element and element at two pointer and decrease the twopointer,
+if none match, then simple increase i.
+This would sort the three elements, inplace.
+```
 
 #### [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) || [Source code](sprial_matrix.js)
-```Write approach here... ```
+```
+Find the rows and columns of the matrix
+Initialize top, bottom, left and right, based on dummy traversal, write the logic in while loop
+```
+> ref : [Spiral logic](https://www.youtube.com/watch?v=3Zv-s9UUrFM)
 
 #### [48. Rotate Image](https://leetcode.com/problems/rotate-image/description/) || [Source code](rotate_matrix_90degree.js)
-```Write approach here...```
+```
+1.Find transpose of the matrix i.e. rows becomes columns and vice versa
+2. reverse each row of the matrix
+```
 
 #### [201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description) || [Source code](bitwise_and_number_range.js)
 ```
