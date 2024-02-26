@@ -2,17 +2,19 @@
 // https://leetcode.com/problems/jump-game/description/?envType=study-plan-v2&envId=top-interview-150
 
 var canJump = function(nums) {
-    //Greedy approach
-    let finalDestinationIndex = nums.length-1;
-
-    //check if we can reach the finalDestinationIndex
-    //Update start the loop from lastIndex-1 because if we reach there and it is non zero number then we can also reach lastIndex.
-    for(let i=nums.length-2; i>=0; i--){
-        if(nums[i]+ i >= finalDestinationIndex){
-            finalDestinationIndex = i;
+    // Set up a variable to keep track of the furthest we can jump
+    let maxJump = 0;
+    
+    // Iterate through the array
+    for (let i = 0; i < nums.length; i++) {
+        // If the current index is greater than the max we can jump, return false
+        if (i > maxJump) {
+            return false;
         }
+        // Update maxJump to be the max we can jump from the current index
+        maxJump = Math.max(i + nums[i], maxJump);
     }
-    return finalDestinationIndex===0 ? true : false ;
-};
-
-// Reference: https://www.youtube.com/watch?v=Gtugy3mRV-A
+    
+    // If we reach the end, return true
+    return true;
+};  
