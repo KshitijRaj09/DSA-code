@@ -175,3 +175,9 @@ The beauty of this solution is the number of times it loops is equal to the numb
 2. After initialization, whenever a person trust someone else than himself, the trusted value of that person should be decreased since that person is not satisfying the two conditions that were mentioned in the question.
 3. Also if a certain x person is trusted by others from town, than this x person value should be increased and those who trusted that x person there values should be decreased.
 4. At last traverse through every person of town and while traversing If a person is found with N-1 trusts than this person should be the judge and return the index of that person .```
+
+### [55. Jump Game](https://leetcode.com/problems/jump-game/description/) || [Source code](jump_game.js)
+```
+it suffices that we iterate over each index, and If we ever encounter an index that is not reachable, we abort and return false. 
+By the end, we will have iterated to the last index. If the loop finishes, then the last index is reachable. 
+```
