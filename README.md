@@ -183,3 +183,13 @@ We iterate over each index and calculate `maxJump = Math.max(i + nums[i], maxJum
 If in any case currentIndex > maxJump, means jump cannot be performed. So, return false.
 Otherwise return true at last.
 ```
+
+### [15. 3Sum](https://leetcode.com/problems/3sum/description/) || [Source code](3sum.js)
+```Think in way of 2 sum sorted array, for this, fix one element and then apply 2 sum for sorted array, for removing duplicates from result, use hashSet in javascript or check if next element are same. If same then skip the elements.```
+
+### [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) || [Source code](find_first_and_last_position_sorted_element.js)
+```
+use binary search, create a function for binary search pass `(array, target, isLeftMost)` and
+if we are search for `firstIndex -> right = mid-1`, for `lastIndex->left=mid+1`;
+```
+
