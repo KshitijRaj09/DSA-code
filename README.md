@@ -194,5 +194,8 @@ if we are search for `firstIndex -> right = mid-1`, for `lastIndex->left=mid+1`;
 ```
 
 ### [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) || [Source code](evaluate_reverse_polish_notation.js)
-```Iterate over the array, if operate comes pop last two elements, do the operation and push the result, if any value comes then push the value in stack. Last return the last element in stack```
+```Iterate over the array, if operate comes pop last two elements, do the operation and push the result, if any value comes then push the value in stack. Last return the last element in stack.```
+
+### [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) || [Source code](two_sum_sorted_array.js)
+```Use two pointer approach, check if `target=num[start]+num[end]`, if target>sum, increment start pointer, else decrement end pointer```
 
