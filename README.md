@@ -193,3 +193,6 @@ use binary search, create a function for binary search pass `(array, target, isL
 if we are search for `firstIndex -> right = mid-1`, for `lastIndex->left=mid+1`;
 ```
 
+### [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) || [Source code](evaluate_reverse_polish_notation.js)
+```Iterate over the array, if operate comes pop last two elements, do the operation and push the result, if any value comes then push the value in stack. Last return the last element in stack```
+
