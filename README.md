@@ -177,25 +177,25 @@ The beauty of this solution is the number of times it loops is equal to the numb
 4. At last traverse through every person of town and while traversing If a person is found with N-1 trusts than this person should be the judge and return the index of that person .
 ```
 
-### [55. Jump Game](https://leetcode.com/problems/jump-game/description/) || [Source code](jump_game.js)
+#### [55. Jump Game](https://leetcode.com/problems/jump-game/description/) || [Source code](jump_game.js)
 ```
 We iterate over each index and calculate `maxJump = Math.max(i + nums[i], maxJump)`.
 If in any case currentIndex > maxJump, means jump cannot be performed. So, return false.
 Otherwise return true at last.
 ```
 
-### [15. 3Sum](https://leetcode.com/problems/3sum/description/) || [Source code](3sum.js)
+#### [15. 3Sum](https://leetcode.com/problems/3sum/description/) || [Source code](3sum.js)
 ```Think in way of 2 sum sorted array, for this, fix one element and then apply 2 sum for sorted array, for removing duplicates from result, use hashSet in javascript or check if next element are same. If same then skip the elements.```
 
-### [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) || [Source code](find_first_and_last_position_sorted_element.js)
+#### [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/) || [Source code](find_first_and_last_position_sorted_element.js)
 ```
 use binary search, create a function for binary search pass `(array, target, isLeftMost)` and
 if we are search for `firstIndex -> right = mid-1`, for `lastIndex->left=mid+1`;
 ```
 
-### [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) || [Source code](evaluate_reverse_polish_notation.js)
+#### [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) || [Source code](evaluate_reverse_polish_notation.js)
 ```Iterate over the array, if operate comes pop last two elements, do the operation and push the result, if any value comes then push the value in stack. Last return the last element in stack.```
 
-### [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) || [Source code](two_sum_sorted_array.js)
+#### [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) || [Source code](two_sum_sorted_array.js)
 ```Use two pointer approach, check if `target=num[start]+num[end]`, if target>sum, increment start pointer, else decrement end pointer```
 
