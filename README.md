@@ -205,3 +205,9 @@ Replace 0 with -1, use hashmap to store all the first prefix sum of the number, 
 Intuition is-> array length =5, 
 0-3 = has prefixsum 5 and 0-5 also has prefixsum 5 means -> 3-5 sum is 0.
 ```
+
+#### [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/description/) || [Source code](713-subarray-product-less-than-k.js)
+```
+Use sliding window approach, take 2 pointer i and j, j will continous increment.
+Find product of nums[j], while product >=k , then shrink window by incrementing i and divide value of nums[i]
+```
