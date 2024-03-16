@@ -199,3 +199,9 @@ if we are search for `firstIndex -> right = mid-1`, for `lastIndex->left=mid+1`;
 #### [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) || [Source code](two_sum_sorted_array.js)
 ```Use two pointer approach, check if `target=num[start]+num[end]`, if target>sum, increment start pointer, else decrement end pointer```
 
+#### [525. Contiguous Array](https://leetcode.com/problems/contiguous-array/description) || [Source code](525-contiguous-subarray.js)
+```
+Replace 0 with -1, use hashmap to store all the first prefix sum of the number, and if that prefixsum appear again then check maxLength = Math.max(maxLength, i - hashmap.get(prefixSum))
+Intuition is-> array length =5, 
+0-3 = has prefixsum 5 and 0-5 also has prefixsum 5 means -> 3-5 sum is 0.
+```
