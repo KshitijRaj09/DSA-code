@@ -245,3 +245,25 @@ at last return intervals.slice(0, k+1);
 3. Push the overlapped interval in output [].
 4. Now, push all the remaining interval to output[]
 ```
+
+#### 40. [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/description) || [Source code](452-minimum-number-of-arrows-burst-balloons.js)
+```
+Sort the balloons end points in ascending order. So, that we compare the overlapping points.
+We'll initalize first end with point[0] end and arrow count=1.
+If previous end point<start of current then we'll increment the arrow count, and update the end point with current end point.
+```
+
+#### [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/) || [Source code](378-kth-smallest-element-in-sorted-matrix.js)
+```
+Binary search is optimised way.
+Row and column are sorted. So, first element will always smallest, and last element will always biggest.
+Apply binary search, find mid. Count all the values which are smaller than mid.
+After check if `count >=k`, if yes than this can be our answer. Check for other possible values.
+`if (k <= countLessThanMid(matrix, mid)) {
+      ans = mid;
+      right = mid - 1;
+   }
+else {
+      left = mid + 1;
+   }`
+```
