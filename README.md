@@ -182,7 +182,7 @@ The beauty of this solution is the number of times it loops is equal to the numb
 1. Create an array Trusted of size N+1 to represent the total number of peoples in a town and initialize it with 0 .
 2. After initialization, whenever a person trust someone else than himself, the trusted value of that person should be decreased since that person is not satisfying the two conditions that were mentioned in the question.
 3. Also if a certain x person is trusted by others from town, than this x person value should be increased and those who trusted that x person there values should be decreased.
-4. At last traverse through every person of town and while traversing If a person is found with N-1 trusts than this person should be the judge and return the index of that person .
+4. At last traverse through every person of town and while traversing If a person is found with N-1 trusts than this person should be the judge and return the index of that person.
 ```
 
 #### 30. [55. Jump Game](https://leetcode.com/problems/jump-game/description/) || [Source code](jump_game.js)
@@ -266,4 +266,33 @@ After check if `count >=k`, if yes than this can be our answer. Check for other 
 else {
       left = mid + 1;
    }`
+```
+
+#### [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/description/) || [Source code](643-max-average-subarray-I.js)
+```Explaination here... ```
+
+#### [79. Word Search](https://leetcode.com/problems/word-search/description/?envType=daily-question&envId=2024-04-03) || [Source code](79-word-search.js)
+```
+Iterate over the matrix and search the first match.
+Then apply recursion. Check 
+`if (index === word.length) return true`
+`if (i < 0 || j < 0 || i > board.length - 1 || j > board[0].length - 1 || word[index] !== board[i][j]) {
+        return false;
+}`
+and call the recursive function for all the 4 direction. Top, down, left, right.
+```
+
+#### [1544. Make The String Great](https://leetcode.com/problems/make-the-string-great/description/?envType=daily-question&envId=2024-04-05) || [Source code](1544-make-the-string-great.js)
+```
+Use stack, store first character, then iterate from i=1, and compare the s[i] follows great string rule with first character of stack at last position. Then push or pop from the stack accordingly.
+```
+
+#### [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/?envType=daily-question&envId=2024-04-02) || [Source code](205-isomorphic_string.js)
+```Take two hashmap and store the isomorphic values of both the arrays and compare.```
+
+#### [1614. Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/?envType=daily-question&envId=2024-04-04) || [Source code](1614-maximum-nesting-depth-of-paratheses.js)
+```
+Take stack, and maxDepth variable iterate over the string if found '(' push in stack and compare `maxDepth = Math.max(maxDepth, stack.length)`.
+if found ')' then pop from stack.
+return maxDepth.
 ```

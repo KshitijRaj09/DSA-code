@@ -2,17 +2,16 @@
 // https://leetcode.com/problems/isomorphic-strings/description/?envType=study-plan-v2&envId=top-interview-150
 
 var isIsomorphic = function(s, t) {
-    if(s.length !== t.length){
-        return false
-    }
-    const hashTable1={};
-    const hashTable2={}
-    for(let i=0; i<s.length; i++){
-        if(hashTable1[s[i]] !== hashTable2[t[i]]){
+    let hashmap1 = new Map();
+    let hashmap2 = new Map();
+    let i=0;
+    while(i<s.length){
+        if(hashmap1.get(s[i]) !== hashmap2.get(t[i])){
             return false;
         }
-        hashTable1[s[i]] = i;
-        hashTable2[t[i]] = i;
+        hashmap1.set(s[i], i);
+        hashmap2.set(t[i], i);
+        i++;
     }
     return true;
 };
