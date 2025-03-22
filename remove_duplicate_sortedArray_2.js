@@ -15,4 +15,4 @@ var removeDuplicates = function(nums) {
     return count;
 };
 
-reference: //https://www.youtube.com/watch?v=drbtmYjZQHQ
+//reference: //https://www.youtube.com/watch?v=drbtmYjZQHQ
