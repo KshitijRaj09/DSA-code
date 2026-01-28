@@ -42,11 +42,12 @@
 #### 7. [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) || [Source code](move_non_zeroes_left.js)
 
 **Pattern: Two-Pointer (Anchor & Explorer)**
-* **Goal:** Move all `0`s to the end without creating a new array.
-* **The Logic:**
-    1. **Anchor (Slow):** Points to the spot where the next non-zero number belongs.
-    2. **Explorer (Fast):** Scans the array from left to right.
-* **Action:** Every time Explorer hits a non-zero, "ship" that value to the Anchor's position and move the Anchor forward.
+
+- **Goal:** Move all `0`s to the end without creating a new array.
+- **The Logic:**
+  1. **Anchor (Slow):** Points to the spot where the next non-zero number belongs.
+  2. **Explorer (Fast):** Scans the array from left to right.
+- **Action:** Every time Explorer hits a non-zero, "swap" that value to the Anchor's position and move the Anchor forward.
 
 ```java
 // Java Implementation
