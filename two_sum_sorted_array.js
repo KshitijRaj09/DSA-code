@@ -15,3 +15,24 @@ var twoSum = function(numbers, target) {
         }
     }
 };
+
+/*
+
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        int startPointer=0, lastPointer=numbers.length-1;
+        while(startPointer < lastPointer){
+            int sum = numbers[startPointer] + numbers[lastPointer];
+            if(sum == target){
+                return new int [] {startPointer + 1, lastPointer+1};
+            }
+            else if(target > sum){
+                startPointer++;
+            }
+            else{
+                lastPointer--;
+            }
+        }
+        return new int [] {};
+    }
+} */
