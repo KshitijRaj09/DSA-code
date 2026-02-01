@@ -366,3 +366,15 @@ Take stack, and maxDepth variable iterate over the string if found '(' push in s
 if found ')' then pop from stack.
 return maxDepth.
 ```
+
+#### [1. Two Sum](https://leetcode.com/problems/two-sum/) || [Source code](two_sum.js)
+
+> **Quick Revision:** Don't search for a pair; search for the "missing piece" ($target - current$). Use a **Map** to store visited numbers. If the missing piece is in the map, you're done.
+
+**Pattern: Hash Map (The Complement Search)**
+
+- **The Logic:**
+  1. Calculate the `complement` ($target - nums[i]$).
+  2. Check if `map.containsKey(complement)`.
+  3. If yes: Return indices.
+  4. If no: `map.put(nums[i], i)` and keep moving.
